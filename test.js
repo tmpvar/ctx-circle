@@ -4,9 +4,6 @@ var circle = require('./ctx-circle');
 test('it does what it says on the box', function(t) {
   var calls = 0;
   var ctx = {
-    beginPath: function() {
-      calls++;
-    },
     moveTo: function(x, y) {
       calls++;
       t.equal(x, 5, 'x includes radius');
@@ -25,7 +22,7 @@ test('it does what it says on the box', function(t) {
 
 
   circle(ctx, 0, 1, 5);
-  t.equal(calls, 3, 'called moveTo and arc')
+  t.equal(calls, 2, 'called moveTo and arc')
 
   t.end();
 });
