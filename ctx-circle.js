@@ -1,5 +1,7 @@
 var TAU = Math.PI*2;
 
+module.exports = circle;
+
 function circle(ctx, x, y, r, reverse) {
   ctx.beginPath();
     ctx.moveTo(x+r, y);
