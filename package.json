@@ -1,11 +1,11 @@
 {
   "name": "ctx-circle",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "draw a circle in 2d html5 canvas",
   "main": "ctx-circle.js",
   "scripts": {
     "test": "node test.js",
-    "example" : "beefy example.js --open"
+    "example": "beefy example.js --open"
   },
   "repository": {
     "type": "git",
